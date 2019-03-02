@@ -2,7 +2,7 @@ PImage img;
 float r, g, b;
 void setup()
 { 
-  img = loadImage("https://thehill.com/sites/default/files/mcconnellmitch_062618gn3_lead.jpg");
+  img = loadImage("");
   surface.setSize(img.width, img.height);
 }
 
@@ -11,7 +11,6 @@ void draw()
   image(img, 0, 0);
   loadPixels();
   int pl = 0; // represents length of pixel array/index of pixel in the while loop
-  int last = pixels.length -1;
   color[] tempArray = new color[pixels.length];
 
   int i; // represents length of pixel array/index in the for loops
